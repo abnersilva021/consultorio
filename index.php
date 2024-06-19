@@ -25,6 +25,7 @@
     <br>
     </header>
 
+   
 
     <main>
 
@@ -54,7 +55,15 @@
 
             <div class="seta">
 
-            &nbsp;&nbsp;&nbsp;&nbsp; Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste reiciendis adipisci repellendus. Dignissimos ipsa reprehenderit similique tenetur sit, ea esse accusamus laborum quas praesentium delectus ducimus voluptate laboriosam eligendi aut! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur amet soluta aperiam corrupti illum est nostrum vero odit? Cumque, totam fuga! Deleniti, a iusto architecto odit reiciendis aliquam quia recusandae.
+            Nosso Consultório Médico Sapucaia surgiu através de uma parceria entre dois médicos que já trabalham há vários anos em Sapucaia do Sul e são bem conhecidos nesta cidade. Eles resolveram realizar a implementação de um empreendimento inovador que oferecesse aos pacientes um ambiente único e agradável, com várias especialidades médicas.
+            <br>
+            <br>
+            <br>
+            Nosso corpo clínico é formado por uma equipe médica especializada e preparada para oferecer um atendimento humanizado e de qualidade às pessoas da cidade e região. Parcerias sólidas com clínicas especializadas dispõem ao seu alcance consultas com acompanhamento médico e exames. 
+            <br>
+            <br>
+            <br>
+            Priorizando a promoção de saúde e a prevenção de doenças, o Consultório Médico Sapucaia oferece consultas médicas com orientações que tenham como meta cuidar de sua saúde, na tentativa de obter mais anos de vida, especialmente com uma qualidade satisfatória.  
 
             </div>
         </div>
@@ -65,8 +74,19 @@
 
                 <p class="paragrafo">
                 <ul class="social">
-                    <li><strong>Whatsapp: (51) 99999-9999</strong></li>
-                    <li><strong>Telefone: (51) 99999-9999</strong></li>
+                    <strong>Whatsapp: (51) 99999-9999</strong>
+                    <br>
+                    <br>
+                   <strong>Telefone: (51) 99999-9999</strong>
+                    <br>
+                    <br>
+                    <a href="https://Facebook.com" target="_blank">Facebook</a>
+                    <br>
+                    <br>
+                    <a href="https://github.com" target="_blank">Github</a>
+                    <br>
+                    <br>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
                 </ul>
                 </p>
             </div>
@@ -74,7 +94,7 @@
     </main>
     <footer>
         <div class="c">
-            Abner Silva 2024
+            Abner Silva - 2024
         </div><br>
 
       
