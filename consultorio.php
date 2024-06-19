@@ -1,55 +1,78 @@
-    <?php
+<?php
+class Consultorio
+{
+    private $nome;
+    private $ano;
+    private $peso;
+    private $altura;
+    private $idade;
+    private $imc;
 
-    class consultorio{
-        private $nome;
-        private $anoNasc;
-        private $peso;
-        private $altura;
-
-        public function __construct(){
-            $this->nome="";
-            $this->anoNasc=0;
-            $this->peso=0;
-            $this->altura=0;
-        }
-        public function setNome($nome){
-            $this->nome = $nome;
-        }
-        public function setAnoNasc($anoNasc){
-            $this->anoNasc = $anoNasc;
-       }
-        public function setPeso($peso){
-            $this->peso = $peso;
-        }
-        public function setAltura($altura){
-            $this->altura = $altura;
-        }
-        public function gotNome(){
-            return $this->nome;
-        }
-        public function getAnoNasc(){
-            return $this->anoNasc;
-        }
-        public function getPeso(){
-            return $this->peso;
-        }
-        public function getAltura(){
-            return $this->altura;
-        }
-        public function calcularIdade($anoNasc){
-            return (2024-$anoNasc);
-        }
-        public function calcularImc($peso, $altura){
-            $imc=$peso/pow($altura, 2);
-        }
-        public function imprimirResultado(){
-            echo"Ficha técnica de $this->nome";
-            echo"Altura: $this->altura m";
-            echo"Peso: $this->peso kg";
-            echo"Idade:$this->calcularIdade($this->anoNasc)";
-            echo"Imc:$this->calcularImc($this->peso, $this->altura)";
-        }
+    public function __construct()
+    {
+        $this->nome = "";
+        $this->ano = 0;
+        $this->peso = 0.0;
+        $this->altura = 0.0;
     }
-            
-     
-   
+
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+    }
+
+    public function getnome()
+    {
+        return $this->nome;
+    }
+
+    public function setAno($ano)
+    {
+        $this->ano = $ano;
+    }
+
+    public function getAno()
+    {
+        return $this->ano;
+    }
+
+    public function setPeso($peso)
+    {
+        $this->peso = $peso;
+    }
+
+    public function getPeso()
+    {
+        return $this->peso;
+    }
+
+    public function setAltura($altura)
+    {
+        $this->altura = $altura;
+    }
+
+    public function getAltura()
+    {
+        return $this->altura;
+    }
+
+    public function calcularIdade($ano)
+    {
+        $anoAtual = date('Y');
+        $idade = $anoAtual - $ano;
+        $this->idade = $idade;
+    }
+    public function calcularIMC($peso, $altura)
+    {
+        $imc = $peso / ($altura * $altura);
+        $imc = number_format($imc, 2);
+        $this->imc = $imc;
+        $classificacao = ($imc < 18.5) ? "Abaixo do peso" : (($imc < 24.9) ? "Peso Normal" : (($imc < 29.9) ? "Sobre peso" : "Obesidade"));
+        return "Seu IMC é " . $imc . ". Classificado como " . $classificacao;
+    }
+
+    public function imprimirResult()
+    {
+        echo "Nome: " . $this->nome . ".<br><br>Idade: " . $this->idade . " anos.<br><br>Ano de nascimento: " . $this->ano . ".<br><br>Peso: " . $this->peso . "Kg.<br><br>Altura: " . $this->altura . "m.<br><br>IMC: " . $this->imc . ".<br><br>Classificação: " . $classificacao = ($this->imc < 18.5) ? "Abaixo do peso" : (($this->imc < 24.9) ? "Peso Normal" : (($this->imc < 29.9) ? "Sobre peso" : "Obesidade"));;
+    }
+}
